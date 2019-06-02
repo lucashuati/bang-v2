@@ -4,13 +4,17 @@ from django.urls import reverse
 from user.factories import UserFactory
 from rest_framework import status
 
+
 class BaseTestCase(TestCase):
     url_name = None
     url_args = None
 
     def _test_method_not_allowed(self, method):
         response = getattr(self.client, method)(self.get_url())
-        self.assertEqual(response.status_code, status.HTTP_405_METHOD_NOT_ALLOWED)
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_405_METHOD_NOT_ALLOWED
+        )
 
     def setUp(self):
         self.client = APIClient()
