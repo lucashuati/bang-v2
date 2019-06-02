@@ -1,0 +1,13 @@
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - python
+  pep8:
+    enabled: true
+  radon:
+    enabled: true
+exclude_patterns:
+  - "**/migrations/*"
+version: 2

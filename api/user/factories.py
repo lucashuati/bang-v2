@@ -2,6 +2,7 @@ import factory
 
 from . import models
 
+
 class UserFactory(factory.DjangoModelFactory):
     last_name = factory.Faker('name')
     username = factory.Faker('email')

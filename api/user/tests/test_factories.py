@@ -1,6 +1,7 @@
 from django.test import TestCase
 from user.factories import UserFactory
 
+
 class FactoryTestCase(TestCase):
 
     def test_create_factories(self):

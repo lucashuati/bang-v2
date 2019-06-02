@@ -3,6 +3,7 @@ from user.serializers import UserSerializer
 from user.factories import UserFactory
 from rest_framework import status
 
+
 class ListUsersTestCase(TestCaseAuthenticated):
 
     @classmethod
@@ -14,7 +15,11 @@ class ListUsersTestCase(TestCaseAuthenticated):
     def test_list_users(self):
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data, UserSerializer(self.users, many=True).data)
+        self.assertEqual(
+            response.data,
+            UserSerializer(self.users, many=True).data
+        )
+
 
 class UpdateUserTestCase(TestCaseAuthenticated):
 
@@ -25,7 +30,7 @@ class UpdateUserTestCase(TestCaseAuthenticated):
         cls.url_args = [cls.user.pk]
 
     def test_update_user(self):
-        data = { 'last_name': 'Updated name' }
+        data = {'last_name': 'Updated name'}
         response = self.client.patch(self.url, data)
         self.user.refresh_from_db()
         self.assertEqual(response.status_code, status.HTTP_200_OK)
