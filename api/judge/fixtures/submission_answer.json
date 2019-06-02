@@ -1,0 +1,51 @@
+[
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "ACCEPTED",
+            "solved": true
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "COMPILATION ERROR",
+            "solved": false
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "RUNTIME ERROR",
+            "solved": false
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "TIME LIMIT EXCEEDED",
+            "solved": false
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "PRESENTATION ERROR",
+            "solved": false
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "WRONG ANSWER",
+            "solved": false
+        }
+    },
+    {
+        "model": "judge.SubmissionAnswer",
+        "fields": {
+            "name": "POSSIBLE RUNTIME ERROR",
+            "solved": false
+        }
+    }
+]

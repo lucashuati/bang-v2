@@ -1,0 +1,26 @@
+[
+    {
+        "model": "judge.Judge",
+        "pk": 1,
+        "fields": {
+            "name": "URI",
+            "user_endpoint": "https://www.urionlinejudge.com.br/judge/en/users/profile/{user_id}"
+        }
+    },
+    {
+        "model": "judge.Judge",
+        "pk": 2,
+        "fields": {
+            "name": "UVA",
+            "user_endpoint": "https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_authorstats&userid={user_id}"
+        }
+    },
+    {
+        "model": "judge.Judge",
+        "pk": 3,
+        "fields": {
+            "name": "SPOJ",
+            "user_endpoint": "http://br.spoj.com/users/{user_id}"
+        }
+    }
+]

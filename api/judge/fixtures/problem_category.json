@@ -1,0 +1,65 @@
+[
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 1,
+        "fields": {
+          "name": "Beginner"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 2,
+        "fields": {
+          "name": "Ad-Hoc"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 3,
+        "fields": {
+          "name": "Strings"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 4,
+        "fields": {
+          "name": "Data Structures and Libraries"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 5,
+        "fields": {
+          "name": "Mathematics"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 6,
+        "fields": {
+          "name": "Paradigms"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 7,
+        "fields": {
+          "name": "Graph"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 8,
+        "fields": {
+          "name": "Computational Geometry"
+        }
+    },
+    {
+        "model": "judge.ProblemCategory",
+        "pk": 9,
+        "fields": {
+          "name": "Uncategorized"
+        }
+    }
+]
